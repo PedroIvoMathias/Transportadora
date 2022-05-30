@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Transportadora;
 
-/**
- *
- * @author coont
- */
-public class Cliente {
-    
+public class Cliente extends Pessoa{
+
+	private int codigo;
 }
