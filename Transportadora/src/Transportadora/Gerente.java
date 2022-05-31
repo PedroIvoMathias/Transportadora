@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Transportadora;
 
-/**
- *
- * @author coont
- */
-public class Gerente {
+
+public class Gerente extends Funcionario{
     
+    @Override
+        public void imprimiDados(){
+        System.out.println("Nome:"+this.getNome()+"CPF:"+getCpf()+"Telefone:"+getTelefone()+"Email:"+getEmail()+"Endereço:"+getEndereco()+"Código:"+getSalario());
+    }
 }
