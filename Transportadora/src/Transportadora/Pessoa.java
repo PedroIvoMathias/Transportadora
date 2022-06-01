@@ -63,7 +63,7 @@ public abstract class Pessoa {
         this.endereco = endereco;
     }
     
-    public void imprimiDados(){
+    public void imprimirDados(){
         System.out.println("Nome:"+this.nome+"CPF:"+this.cpf+"Telefone:"+this.telefone+"Email:"+this.email+"Endereço:"+this.endereco);
     }
 }

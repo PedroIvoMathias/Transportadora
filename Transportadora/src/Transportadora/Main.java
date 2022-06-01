@@ -1,7 +1,7 @@
 package Transportadora;
 
 
-public class Main(){
+public class Main{
     public static void main(String[] args) {
 
         Endereco end1 = new Endereco();
@@ -20,6 +20,7 @@ public class Main(){
         c.setCpf("06798465231");
         c.setEndereco(end1);
         c.setTelefone("995664236");
+        c.imprimirDados();
 
         Data d1 = new Data();
         d1.setAno(2022);
@@ -34,14 +35,15 @@ public class Main(){
         f.setCpf("06798465231");
         f.setEndereco(end1);
         f.setTelefone("995664236");
+        f.imprimirDados();
 
         Gerente g = new Gerente();
-        f.setNome("Alberto");
-        f.calculaPagamento();
-        f.setCpf("06798465231");
-        f.setEndereco(end1);
-        f.setTelefone("995664236");
-        f.imprimirDados();
+        g.setNome("Alberto");
+        g.calculaPagamento();
+        g.setCpf("06798465231");
+        g.setEndereco(end1);
+        g.setTelefone("995664236");
+        g.imprimirDados();
 
         Caixa caixa = new Caixa();
         caixa.setAltura(1.02);

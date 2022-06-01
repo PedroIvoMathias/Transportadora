@@ -15,7 +15,7 @@ public class Cliente extends Pessoa{
     }
     
     @Override
-     public void imprimiDados(){
+     public void imprimirDados(){
         System.out.println("Nome:"+this.getNome()+"CPF:"+getCpf()+"Telefone:"+getTelefone()+"Email:"+getEmail()+"Endereço:"+getEndereco()+"Código:"+this.codigo);
     }
 }
