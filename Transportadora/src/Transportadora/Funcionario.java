@@ -1,7 +1,7 @@
 package Transportadora;
 
 
-public class Funcionario extends Pessoa{
+public class Funcionario extends Pessoa implements Pagamento{
     private double salario;
     
     
@@ -15,7 +15,11 @@ public class Funcionario extends Pessoa{
     }
     
     @Override
-        public void imprimiDados(){
+        public void imprimirDados(){
         System.out.println("Nome:"+this.getNome()+"CPF:"+getCpf()+"Telefone:"+getTelefone()+"Email:"+getEmail()+"Endereço:"+getEndereco()+"Código:"+salario);
+    }
+
+    public double calculaPagamento(){
+        return this.salario;
     }
 }
