@@ -3,7 +3,16 @@ package Transportadora;
 
 public class Funcionario extends Pessoa implements Pagamento{
     private double salario;
+
+
+    public Funcionario(double salario, String nome, String cpf, String telefone, String email, Endereco endereco) {
+        super(nome, cpf, telefone, email, endereco);
+        this.salario = salario;
+    }
     
+    public Funcionario(){
+        
+    }   
     
 
     public double getSalario() {
@@ -15,11 +24,14 @@ public class Funcionario extends Pessoa implements Pagamento{
     }
     
     @Override
+    public double calculaPagamento(){
+        return this.getSalario() * (0.8);
+    }
+    
+    @Override
         public void imprimirDados(){
-        System.out.println("Nome:"+this.getNome()+" CPF:"+getCpf()+" Telefone:"+getTelefone()+" Email:"+getEmail()+" Endereço:"+getEndereco()+" Salário:"+salario);
+        System.out.println("Nome:"+this.getNome()+" CPF:"+getCpf()+" Telefone:"+getTelefone()+" Email:"+getEmail()+" Endereço:"+getEndereco()+" Salário:"+this.calculaPagamento());
     }
 
-    public double calculaPagamento(){
-        return this.salario;
-    }
+    
 }

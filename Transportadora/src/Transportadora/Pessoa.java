@@ -64,6 +64,6 @@ public abstract class Pessoa {
     }
     
     public void imprimirDados(){
-        //System.out.println("Nome: "+this.nome+"CPF: "+this.cpf+"Telefone: "+this.telefone+"Email: "+this.email+"Endereço: "+this.endereco.toString());
+
     }
 }
