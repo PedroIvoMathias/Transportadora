@@ -93,6 +93,11 @@ public class Endereco {
     public void setComplemento(String complemento) {
         this.complemento = complemento;
     }
-	
+
+    
+    @Override
+    public String toString() {
+        return  "pais=" + pais + ", estado=" + estado + ", cidade=" + cidade + ", bairro=" + bairro + ", logradouro=" + logradouro + ", cep=" + cep + ", numero=" + numero + ", complemento=" + complemento ;
+    }   
 	
 }
