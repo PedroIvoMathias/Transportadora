@@ -16,7 +16,7 @@ public class Funcionario extends Pessoa implements Pagamento{
     
     @Override
         public void imprimirDados(){
-        System.out.println("Nome:"+this.getNome()+"CPF:"+getCpf()+"Telefone:"+getTelefone()+"Email:"+getEmail()+"Endereço:"+getEndereco()+"Código:"+salario);
+        System.out.println("Nome:"+this.getNome()+" CPF:"+getCpf()+" Telefone:"+getTelefone()+" Email:"+getEmail()+" Endereço:"+getEndereco()+" Salário:"+salario);
     }
 
     public double calculaPagamento(){

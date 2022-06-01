@@ -94,11 +94,10 @@ public class Endereco {
         this.complemento = complemento;
     }
 
+    
     @Override
     public String toString() {
-        return "Endereco{" + "pais=" + pais + ", estado=" + estado + ", cidade=" + cidade + ", bairro=" + bairro + ", logradouro=" + logradouro + ", cep=" + cep + ", numero=" + numero + ", complemento=" + complemento + '}';
-    }
-    
-    
+        return  "pais=" + pais + ", estado=" + estado + ", cidade=" + cidade + ", bairro=" + bairro + ", logradouro=" + logradouro + ", cep=" + cep + ", numero=" + numero + ", complemento=" + complemento ;
+    }   
 	
 }

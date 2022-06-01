@@ -13,13 +13,34 @@ public class Main{
         end1.setComplemento("Casa");
         end1.setLogradouro("Rua Aquino Sales");
         end1.setCep("28013-510");
-
+        
+        Endereco end2 = new Endereco();
+        end2.setCidade("São Paulo");
+        end2.setBairro("Centro");
+        end2.setEstado("SP");
+        end2.setNumero(154);
+        end2.setPais("Brasil");
+        end2.setComplemento("Apartamento N° 34");
+        end2.setLogradouro("Rua Teobaldo Gentil");
+        end2.setCep("22035-511");
+        
+        Endereco end3 = new Endereco();
+        end3.setCidade("Rio de Janeiro");
+        end3.setBairro("Cosmos");
+        end3.setEstado("Rio de Janeiro");
+        end3.setNumero(154);
+        end3.setPais("Brasil");
+        end3.setComplemento("Casa");
+        end3.setLogradouro("Rua Alguma Coisa");
+        end3.setCep("12053-409");
+       
+        
         Cliente c = new Cliente();
         c.setNome("Claudio");
         c.setCodigo(12357);
-        c.setCpf("06798465231");
+        c.setCpf("09816273847");
         c.setEndereco(end1);
-        c.setTelefone("995664236");
+        c.setTelefone("22 999376634");
         c.imprimirDados();
 
         Data d1 = new Data();
@@ -30,19 +51,19 @@ public class Main{
 
         Funcionario f = new Funcionario();
         
-        f.setNome("Claudio");
+        f.setNome("Lucas");
         f.setSalario(1000);
-        f.setCpf("06798465231");
-        f.setEndereco(end1);
-        f.setTelefone("995664236");
+        f.setCpf("78967567382");
+        f.setEndereco(end2);
+        f.setTelefone("21 986765734");
         f.imprimirDados();
 
         Gerente g = new Gerente();
         g.setNome("Alberto");
         g.calculaPagamento();
-        g.setCpf("06798465231");
-        g.setEndereco(end1);
-        g.setTelefone("995664236");
+        g.setCpf("08976546521");
+        g.setEndereco(end3);
+        g.setTelefone("22 995664236");
         g.imprimirDados();
 
         Caixa caixa = new Caixa();
