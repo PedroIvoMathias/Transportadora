@@ -28,8 +28,6 @@ public class Endereco {
     }
     
     
-    
-
     public String getPais() {
         return pais;
     }

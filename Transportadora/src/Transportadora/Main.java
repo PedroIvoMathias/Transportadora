@@ -52,25 +52,33 @@ public class Main{
         Funcionario f = new Funcionario();
         
         f.setNome("Lucas");
-        f.setSalario(1000);
+        f.setSalario(1000.0);
         f.setCpf("78967567382");
         f.setEndereco(end2);
         f.setTelefone("21 986765734");
         f.imprimirDados();
+        f.calculaPagamento();
 
         Gerente g = new Gerente();
         g.setNome("Alberto");
-        g.calculaPagamento();
+        g.setSalario(1000.0);
         g.setCpf("08976546521");
         g.setEndereco(end3);
         g.setTelefone("22 995664236");
         g.imprimirDados();
 
         Caixa caixa = new Caixa();
-        caixa.setAltura(1.02);
+        caixa.setAltura(0.72);
         caixa.setComprimento(0.56);
         caixa.setLargura(0.43);
-        caixa.setPeso(1.1);
+        caixa.setPeso(6.1);
+        
+        Cotacao cot = new Cotacao();
+        cot.setCepOrigem(c.getEndereco());
+        cot.setCepDestino(f.getEndereco());
+        cot.setQuantidadeCaixa(11);
+        cot.setDimensaoCaixa(caixa);
+        System.out.println("Valor da cotação: "+cot.CalculoPrecoBase());
     }
 }
 

@@ -50,7 +50,14 @@ public class Cotacao {
     
     
     public double CalculoPrecoBase(){
-        return 0;
+        if(this.dimensaoCaixa.getAltura() * this.dimensaoCaixa.getLargura() * this.dimensaoCaixa.getComprimento() + this.dimensaoCaixa.getPeso() >= 6){
+            if(this.cepOrigem.getEstado() != this.cepDestino.getEstado()){
+                if(this.quantidadeCaixa >=8){
+                    return 3500.0;
+                }
+            }
+        }
+        return 2000.0; 
     }
     
     
